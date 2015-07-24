@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>LightMon Dataset</h1>
+    <p><a class="btn btn-primary" href="ftp://ftp.kom.tu-darmstadt.de/smartmeter/LightMon_Dataset___2015.07.24.zip" role="button">Download</a></p>
+    
+  </div>
+</div>
+<div class="container">
+  <h2>General Information</h2>
+  <ul>
+  <li><b>Days:</b> 356</li>
+  <li><b>Offices:</b> 23</li>
+  <li><b>Sensors:</b> Power + KNX events</li>
+  </ul>
+  
+  
+  <h2>Energy Profiles</h2>
+  
+  <code>
+  Zeitstempel,P EMU1 L1,P EMU1 L2,P EMU1 L3,P EMU2 L1,P EMU2 L2,P EMU2 L3,U EMU1 L1,U EMU1 L2,U EMU1 L3,U EMU2 L1,U EMU2 L2,U EMU2 L3<br/>
+2014-07-10 17:26:00.789020,943,526,317,514,651,286,235.2,234.9,235.8,235.2,234.9,235.6<br/>
+2014-07-10 17:26:01.789970,943,526,317,514,651,286,235.2,234.9,235.8,235.2,234.9,235.6<br/>
+2014-07-10 17:26:02.790920,952,526,325,514,651,286,235.2,234.9,235.8,235.2,234.9,235.6<br/>
+2014-07-10 17:26:03.791920,952,526,325,519,653,302,235.2,234.9,235.8,235.2,234.9,235.6<br/>
+2014-07-10 17:26:04.792935,946,526,317,519,653,302,235.2,234.9,235.8,235.2,234.9,235.6<br/>
+  </code>
+  
+  
+  <h2>KNX Events</h2>
+  <code>
+  Timestamp, Receiver, Sender, Status<br/>
+2014-09-24 00:42:52.429, 3/2/8, 1/4/46, Switch ON<br/>
+2014-09-24 00:43:04.017, 3/2/4, 1/4/43, Switch ON<br/>
+2014-09-24 00:47:10.439, 3/2/8, 1/4/45, Switch ON<br/>
+2014-09-24 01:01:19.244, 3/2/7, 1/4/44, Switch OFF<br/>
+2014-09-24 01:01:38.135, 3/2/4, 1/4/43, Switch OFF<br/>
+2014-09-24 06:50:38.979, 1/2/77, 1/4/76, Switch ON<br/>
+2014-09-24 07:02:57.886, 3/2/8, 1/4/45, Switch ON<br/>
+2014-09-24 07:07:02.068, 3/2/8, 1/4/45, Switch ON<br/>
+2014-09-24 07:20:41.511, 3/2/10, 1/4/38, Switch OFF<br/>
+2014-09-24 07:20:48.531, 3/2/12, 1/4/40, Switch OFF<br/>
+2014-09-24 07:23:19.486, 3/2/7, 1/4/44, Switch OFF<br/>
+2014-09-24 07:24:12.591, 3/2/4, 1/4/43, Switch OFF<br/>
+  </code>
+</div>
+{% endblock %}
