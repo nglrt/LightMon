@@ -33,10 +33,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url '/index.html' %}">Home</a></li>
-            <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="{% url '/about.html' %}">About</a></li>
-            <li class="{% if_current_page '/dataset.html' 'active' '' %}"><a href="{% url '/dataset.html' %}">Dataset</a></li>
-            <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="{% url '/contact.html' %}">Contact</a></li>
+            <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="/LightMon{% url '/index.html' %}">Home</a></li>
+            <li class="{% if_current_page '/about.html' 'active' '' %}"><a href="/LightMon{% url '/about.html' %}">About</a></li>
+            <li class="{% if_current_page '/dataset.html' 'active' '' %}"><a href="/LightMon{% url '/dataset.html' %}">Dataset</a></li>
+            <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="/LightMon{% url '/contact.html' %}">Contact</a></li>
             
           </ul>
 
